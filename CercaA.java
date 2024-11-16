@@ -7,14 +7,14 @@ package pkg20241116_wang_stringhe;
 public class CercaA {
     
     //Inizio : Dichiarazioni dei attributi per la classe che vengono utilizzati dopo nei metodi.
-    private char[] parolaUtente = new char[30];
     private char LetteraA = 'a';
     private int occorrenze = 0;
+    private String CercaA;
     //Fine : Dichiarazioni dei attributi per la classe che vengono utilizzati dopo nei metodi.
     
     // Inizio : Costruttore all'interno dei parametri di tipo scan.
     public CercaA(scan Input) {
-    
+
     }
     // Fine : Costruttore all'interno dei parametri di tipo scan.
     
@@ -22,8 +22,7 @@ public class CercaA {
     public void aFinder(scan Input){
 
         for(int i = 0; i < Input.getStringa().length(); i++){
-            parolaUtente[i] = Input.getStringa().charAt(i);
-            if (parolaUtente[i] == LetteraA){
+            if (Input.getStringa().charAt(i) == LetteraA){
                 occorrenze = occorrenze + 1;
             }
         }
